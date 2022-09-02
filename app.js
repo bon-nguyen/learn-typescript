@@ -1,2 +1,5 @@
-var something = null;
-var nothing = null;
+"use strict";
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    console.log("123");
+});

@@ -23,10 +23,10 @@ Question 1: Why are "Types" useful and offer and advantage compare to vanilla Ja
 
 `Union | OR`: (name: string | number) are used when a value can be more than single types
 
-`Literal types` is available in Typescript today: strings, numbers, and boolean, by using literal types you can allow an exact value which a strings number or boolean must hava.
+`Literal types` is available in Typescript today: strings, numbers, and boolean, by using literal types you can allow an exact value which a strings number or boolean must have.
 ==> Especially useful when used in conjunction with `union types`.
 
-`Type aliases` we've been using object types and union types by writing them directly in type annotations (Chú thích). This is convenient, but it's commom to want to use the same type more than once and refer to it by a single name.
+`Type aliases` we've been using object types and union types by writing them directly in type annotations (Chú thích). This is convenient, but it's common to want to use the same type more than once and refer to it by a single name.
 
 A type alias is exactly that - a `name` for any `type`
 Note: cannot use `type aliases` to create `different/distinct` version of the same type
@@ -46,7 +46,7 @@ NOtes: Simple inference rules, you don't need to ex
 `Void` void is used where there is no data. 
 example:
 function sayHo ():void {
-    console.log("Hi"); -> As only null or underfin is assignmable to void
+    console.log("Hi"); -> As only null or  undefined is assignable to void
 }
 
 `Callback function` can return something, even of the argument on which they dose NOT expect a returned value; 
@@ -55,3 +55,15 @@ function sayHo ():void {
 
 `Section 3 ** The typescript compiler (and Configuration)`
 Can generate a tsconfig.json
+`combine all file .ts` ->> tsc
+
+=>> tsc -w `auto combine ts`
+
+`Using watch Mode`
+
+`Compiling the Entire Project/ Multiple Files`
+Create a tsconfig.json ->> cmt: tsc --init
+
+
+
+>> How we can manage multiple files with typescript
